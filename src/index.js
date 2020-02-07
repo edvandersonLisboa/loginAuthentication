@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: true}));
 require('./controllers/authControllers')(app);
 app.get('/', (req, res) =>{
  
-    console.log('Ok');
+   
 
 })
 
