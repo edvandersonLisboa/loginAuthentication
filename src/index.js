@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: true}));
 require('./controllers/authControllers')(app);
 app.get('/', (req, res) =>{
  
-   
+    res.write("<h1>Api Funcionando</h1>");
 
 })
 
