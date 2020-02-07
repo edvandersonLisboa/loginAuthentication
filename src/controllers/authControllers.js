@@ -4,8 +4,8 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const authConfig = require('../config/auth');
 const router = express.Router();
-
-router.post('APP_URL/register', async(req,res)=>{
+require('dotenv/config')
+router.post(process.env.APP_URL+'/register', async(req,res)=>{
  const {email} = req.body;
 
     try{
@@ -24,7 +24,7 @@ router.post('APP_URL/register', async(req,res)=>{
     }
 })
 
-router.post('APP_URL/authenticate', async(req, res) =>{
+router.post(process.env.APP_URL+'/authenticate', async(req, res) =>{
     const { email, password} = req.body;
    console.log({email},{password} )
     const user = await User.findOne({ email }).select('+password');
@@ -43,4 +43,4 @@ router.post('APP_URL/authenticate', async(req, res) =>{
      res.send({user, token});
 })
 
-module.exports = app => app.use('APP_URL/auth', router);
+module.exports = app => app.use(process.env.APP_URL+'/auth', router);
