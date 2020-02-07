@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const authConfig = require('../config/auth');
 const router = express.Router();
 require('dotenv/config')
-router.post(process.env.APP_URL+'/register', async(req,res)=>{
+router.post('/register', async(req,res)=>{
  const {email} = req.body;
 
     try{
@@ -24,7 +24,7 @@ router.post(process.env.APP_URL+'/register', async(req,res)=>{
     }
 })
 
-router.post(process.env.APP_URL+'/authenticate', async(req, res) =>{
+router.post('/authenticate', async(req, res) =>{
     const { email, password} = req.body;
    console.log({email},{password} )
     const user = await User.findOne({ email }).select('+password');
@@ -43,4 +43,4 @@ router.post(process.env.APP_URL+'/authenticate', async(req, res) =>{
      res.send({user, token});
 })
 
-module.exports = app => app.use(process.env.APP_URL+'/auth', router);
+module.exports = app => app.use('/auth', router);

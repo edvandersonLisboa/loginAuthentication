@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended: true}));
 
 //rota do controllers pode usar consign
 require('./controllers/authControllers')(app);
-app.get(process.env.APP_URL+'/', (req, res) =>{
+app.get('/', (req, res) =>{
  
     console.log('Ok');
 
