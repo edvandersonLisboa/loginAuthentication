@@ -1,0 +1,55 @@
+[
+    {
+      "agencia": "9188",
+      "conta": "167819872567",
+      "saldo": "2500",
+      "ativo": true,
+      "nome": "Maria das Graças",
+      "email": "m.gracas@a30.com",
+      "cpf": "22222222210",
+      "senha": "123456",
+      "validacao": "1234"
+    },
+    {
+      "agencia": "9188",
+      "conta": "2789221983678",
+      "saldo": "2500",
+      "ativo": true,
+      "nome": "Jessica Mariana Albert",
+      "email": "j.mariana@a30.com",
+      "cpf": "22222222211",
+      "senha": "123456",
+      "validacao": "1234"
+    }, {
+      "agencia": "9188",
+      "conta": "389133219479",
+      "saldo": "300",
+      "ativo": true,
+      "nome": "Edvanderson Barbosa Lisboa",
+      "email": "e.lisboa@a30.com",
+      "cpf": "33333333312",
+      "senha": "123456",
+      "validacao": "1234"
+    }, {
+      "agencia": "9188",
+      "conta": "491244321581",
+      "saldo": "4500",
+      "ativo": true,
+      "nome": "Emersom Marque Da Silva",
+      "email": "E.marques@a30.com",
+      "cpf": "44444444413",
+      "senha": "123456",
+      "validacao": "1234"
+    }, {
+      "agencia": "9199",
+      "conta": "491244321581",
+      "saldo": "4500",
+      "ativo": true,
+      "nome": "Emerson Marque Da Silva",
+      "email": "E.marques@a30.com",
+      "cpf": "44444444413",
+      "senha": "123456",
+      "validacao": "1234"
+    }
+    
+  ]
